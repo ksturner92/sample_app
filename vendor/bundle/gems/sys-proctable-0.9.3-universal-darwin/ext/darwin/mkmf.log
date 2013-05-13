@@ -1,0 +1,24 @@
+have_type: checking for rb_pid_t in ruby.h... -------------------- yes
+
+"gcc-4.2 -o conftest -I/Users/kgrl55/.rbenv/versions/1.9.3-p385/include/ruby-1.9.1/x86_64-darwin12.2.0 -I/Users/kgrl55/.rbenv/versions/1.9.3-p385/include/ruby-1.9.1/ruby/backward -I/Users/kgrl55/.rbenv/versions/1.9.3-p385/include/ruby-1.9.1 -I. -I'/Users/kgrl55/.rbenv/versions/1.9.3-p385/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/kgrl55/.rbenv/versions/1.9.3-p385/include'   -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -pipe conftest.c  -L. -L/Users/kgrl55/.rbenv/versions/1.9.3-p385/lib -L. -L'/Users/kgrl55/.rbenv/versions/1.9.3-p385/lib'      -lruby-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+"gcc-4.2 -I/Users/kgrl55/.rbenv/versions/1.9.3-p385/include/ruby-1.9.1/x86_64-darwin12.2.0 -I/Users/kgrl55/.rbenv/versions/1.9.3-p385/include/ruby-1.9.1/ruby/backward -I/Users/kgrl55/.rbenv/versions/1.9.3-p385/include/ruby-1.9.1 -I. -I'/Users/kgrl55/.rbenv/versions/1.9.3-p385/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/kgrl55/.rbenv/versions/1.9.3-p385/include'   -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -pipe   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: 
+5: /*top*/
+6: typedef rb_pid_t conftest_type;
+7: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
